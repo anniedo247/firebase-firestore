@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+      <form id="add-cafe-form"></form>
+
+      <ul id="cafe-list"></ul>
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDOgGZol73Iynt-513z2-SUu-JRDwsx2Kg",
+        authDomain: "fir-firestore-tutorial-5dec0.firebaseapp.com",
+        projectId: "fir-firestore-tutorial-5dec0",
+        storageBucket: "fir-firestore-tutorial-5dec0.appspot.com",
+        messagingSenderId: "132033662312",
+        appId: "1:132033662312:web:35669b9ac76daa5ba2dadd",
+        measurementId: "G-0B4CK61BWJ",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
